@@ -1,0 +1,44 @@
+.modal-window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  padding: 40px;
+  background-color: var(--tertiary-color);
+  box-shadow: var(--box-shadow-team);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5) rotate(240deg);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid var(--close-btn-border-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close-btn__icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--quaternary-color);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+
+  .close-btn:hover &,
+  .close-btn:focus & {
+    fill: var(--accent-color);
+  }
+}

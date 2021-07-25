@@ -1,0 +1,40 @@
+.team {
+  background-color: var(--light-bg-color);
+}
+
+.team__list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team__item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: var(--tertiary-color);
+  box-shadow: var(--box-shadow-team);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__content {
+  padding: 30px 32px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team__profession {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}

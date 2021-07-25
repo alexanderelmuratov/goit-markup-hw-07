@@ -1,0 +1,29 @@
+.logo {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  animation-duration: 1000ms;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.logo__web {
+  color: var(--accent-color);
+}
+
+.logo__studio_theme_light {
+  color: var(--quaternary-color);
+}
+
+.logo__studio_theme_dark {
+  color: var(--tertiary-color);
+}
